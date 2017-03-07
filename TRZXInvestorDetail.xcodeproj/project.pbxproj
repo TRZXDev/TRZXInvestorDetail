@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DB85CAF1E6EC3BB00AD7C0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB85CAE1E6EC3BB00AD7C0A /* main.m */; };
+		6DB85CB21E6EC3BB00AD7C0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB85CB11E6EC3BB00AD7C0A /* AppDelegate.m */; };
+		6DB85CB51E6EC3BB00AD7C0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB85CB41E6EC3BB00AD7C0A /* ViewController.m */; };
+		6DB85CB81E6EC3BB00AD7C0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB85CB61E6EC3BB00AD7C0A /* Main.storyboard */; };
+		6DB85CBA1E6EC3BB00AD7C0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DB85CB91E6EC3BB00AD7C0A /* Assets.xcassets */; };
+		6DB85CBD1E6EC3BB00AD7C0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB85CBB1E6EC3BB00AD7C0A /* LaunchScreen.storyboard */; };
+		6DB85CC81E6EC3BB00AD7C0A /* TRZXInvestorDetailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB85CC71E6EC3BB00AD7C0A /* TRZXInvestorDetailTests.m */; };
+		6DB85CD31E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB85CD21E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DB85CC41E6EC3BB00AD7C0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB85CA21E6EC3BB00AD7C0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DB85CA91E6EC3BB00AD7C0A;
+			remoteInfo = TRZXInvestorDetail;
+		};
+		6DB85CCF1E6EC3BB00AD7C0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB85CA21E6EC3BB00AD7C0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DB85CA91E6EC3BB00AD7C0A;
+			remoteInfo = TRZXInvestorDetail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6DB85CAA1E6EC3BB00AD7C0A /* TRZXInvestorDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXInvestorDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB85CAE1E6EC3BB00AD7C0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DB85CB01E6EC3BB00AD7C0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6DB85CB11E6EC3BB00AD7C0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6DB85CB31E6EC3BB00AD7C0A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6DB85CB41E6EC3BB00AD7C0A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6DB85CB71E6EC3BB00AD7C0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DB85CB91E6EC3BB00AD7C0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DB85CBC1E6EC3BB00AD7C0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DB85CBE1E6EC3BB00AD7C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DB85CC31E6EC3BB00AD7C0A /* TRZXInvestorDetailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRZXInvestorDetailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB85CC71E6EC3BB00AD7C0A /* TRZXInvestorDetailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZXInvestorDetailTests.m; sourceTree = "<group>"; };
+		6DB85CC91E6EC3BB00AD7C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DB85CCE1E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRZXInvestorDetailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB85CD21E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZXInvestorDetailUITests.m; sourceTree = "<group>"; };
+		6DB85CD41E6EC3BB00AD7C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DB85CA71E6EC3BB00AD7C0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB85CC01E6EC3BB00AD7C0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB85CCB1E6EC3BB00AD7C0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DB85CA11E6EC3BB00AD7C0A = {
+			isa = PBXGroup;
+			children = (
+				6DB85CAC1E6EC3BB00AD7C0A /* TRZXInvestorDetail */,
+				6DB85CC61E6EC3BB00AD7C0A /* TRZXInvestorDetailTests */,
+				6DB85CD11E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests */,
+				6DB85CAB1E6EC3BB00AD7C0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DB85CAB1E6EC3BB00AD7C0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DB85CAA1E6EC3BB00AD7C0A /* TRZXInvestorDetail.app */,
+				6DB85CC31E6EC3BB00AD7C0A /* TRZXInvestorDetailTests.xctest */,
+				6DB85CCE1E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DB85CAC1E6EC3BB00AD7C0A /* TRZXInvestorDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6DB85CB01E6EC3BB00AD7C0A /* AppDelegate.h */,
+				6DB85CB11E6EC3BB00AD7C0A /* AppDelegate.m */,
+				6DB85CB31E6EC3BB00AD7C0A /* ViewController.h */,
+				6DB85CB41E6EC3BB00AD7C0A /* ViewController.m */,
+				6DB85CB61E6EC3BB00AD7C0A /* Main.storyboard */,
+				6DB85CB91E6EC3BB00AD7C0A /* Assets.xcassets */,
+				6DB85CBB1E6EC3BB00AD7C0A /* LaunchScreen.storyboard */,
+				6DB85CBE1E6EC3BB00AD7C0A /* Info.plist */,
+				6DB85CAD1E6EC3BB00AD7C0A /* Supporting Files */,
+			);
+			path = TRZXInvestorDetail;
+			sourceTree = "<group>";
+		};
+		6DB85CAD1E6EC3BB00AD7C0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DB85CAE1E6EC3BB00AD7C0A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DB85CC61E6EC3BB00AD7C0A /* TRZXInvestorDetailTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DB85CC71E6EC3BB00AD7C0A /* TRZXInvestorDetailTests.m */,
+				6DB85CC91E6EC3BB00AD7C0A /* Info.plist */,
+			);
+			path = TRZXInvestorDetailTests;
+			sourceTree = "<group>";
+		};
+		6DB85CD11E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6DB85CD21E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests.m */,
+				6DB85CD41E6EC3BB00AD7C0A /* Info.plist */,
+			);
+			path = TRZXInvestorDetailUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DB85CA91E6EC3BB00AD7C0A /* TRZXInvestorDetail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DB85CD71E6EC3BB00AD7C0A /* Build configuration list for PBXNativeTarget "TRZXInvestorDetail" */;
+			buildPhases = (
+				6DB85CA61E6EC3BB00AD7C0A /* Sources */,
+				6DB85CA71E6EC3BB00AD7C0A /* Frameworks */,
+				6DB85CA81E6EC3BB00AD7C0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TRZXInvestorDetail;
+			productName = TRZXInvestorDetail;
+			productReference = 6DB85CAA1E6EC3BB00AD7C0A /* TRZXInvestorDetail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DB85CC21E6EC3BB00AD7C0A /* TRZXInvestorDetailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DB85CDA1E6EC3BB00AD7C0A /* Build configuration list for PBXNativeTarget "TRZXInvestorDetailTests" */;
+			buildPhases = (
+				6DB85CBF1E6EC3BB00AD7C0A /* Sources */,
+				6DB85CC01E6EC3BB00AD7C0A /* Frameworks */,
+				6DB85CC11E6EC3BB00AD7C0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DB85CC51E6EC3BB00AD7C0A /* PBXTargetDependency */,
+			);
+			name = TRZXInvestorDetailTests;
+			productName = TRZXInvestorDetailTests;
+			productReference = 6DB85CC31E6EC3BB00AD7C0A /* TRZXInvestorDetailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DB85CCD1E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DB85CDD1E6EC3BB00AD7C0A /* Build configuration list for PBXNativeTarget "TRZXInvestorDetailUITests" */;
+			buildPhases = (
+				6DB85CCA1E6EC3BB00AD7C0A /* Sources */,
+				6DB85CCB1E6EC3BB00AD7C0A /* Frameworks */,
+				6DB85CCC1E6EC3BB00AD7C0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DB85CD01E6EC3BB00AD7C0A /* PBXTargetDependency */,
+			);
+			name = TRZXInvestorDetailUITests;
+			productName = TRZXInvestorDetailUITests;
+			productReference = 6DB85CCE1E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DB85CA21E6EC3BB00AD7C0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TRZX;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = TRZX;
+				TargetAttributes = {
+					6DB85CA91E6EC3BB00AD7C0A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 487PQPPTGA;
+						ProvisioningStyle = Automatic;
+					};
+					6DB85CC21E6EC3BB00AD7C0A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 487PQPPTGA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6DB85CA91E6EC3BB00AD7C0A;
+					};
+					6DB85CCD1E6EC3BB00AD7C0A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 487PQPPTGA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6DB85CA91E6EC3BB00AD7C0A;
+					};
+				};
+			};
+			buildConfigurationList = 6DB85CA51E6EC3BB00AD7C0A /* Build configuration list for PBXProject "TRZXInvestorDetail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DB85CA11E6EC3BB00AD7C0A;
+			productRefGroup = 6DB85CAB1E6EC3BB00AD7C0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DB85CA91E6EC3BB00AD7C0A /* TRZXInvestorDetail */,
+				6DB85CC21E6EC3BB00AD7C0A /* TRZXInvestorDetailTests */,
+				6DB85CCD1E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DB85CA81E6EC3BB00AD7C0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB85CBD1E6EC3BB00AD7C0A /* LaunchScreen.storyboard in Resources */,
+				6DB85CBA1E6EC3BB00AD7C0A /* Assets.xcassets in Resources */,
+				6DB85CB81E6EC3BB00AD7C0A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB85CC11E6EC3BB00AD7C0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB85CCC1E6EC3BB00AD7C0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DB85CA61E6EC3BB00AD7C0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB85CB51E6EC3BB00AD7C0A /* ViewController.m in Sources */,
+				6DB85CB21E6EC3BB00AD7C0A /* AppDelegate.m in Sources */,
+				6DB85CAF1E6EC3BB00AD7C0A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB85CBF1E6EC3BB00AD7C0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB85CC81E6EC3BB00AD7C0A /* TRZXInvestorDetailTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB85CCA1E6EC3BB00AD7C0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB85CD31E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DB85CC51E6EC3BB00AD7C0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DB85CA91E6EC3BB00AD7C0A /* TRZXInvestorDetail */;
+			targetProxy = 6DB85CC41E6EC3BB00AD7C0A /* PBXContainerItemProxy */;
+		};
+		6DB85CD01E6EC3BB00AD7C0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DB85CA91E6EC3BB00AD7C0A /* TRZXInvestorDetail */;
+			targetProxy = 6DB85CCF1E6EC3BB00AD7C0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DB85CB61E6EC3BB00AD7C0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DB85CB71E6EC3BB00AD7C0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DB85CBB1E6EC3BB00AD7C0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DB85CBC1E6EC3BB00AD7C0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DB85CD51E6EC3BB00AD7C0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6DB85CD61E6EC3BB00AD7C0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DB85CD81E6EC3BB00AD7C0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 487PQPPTGA;
+				INFOPLIST_FILE = TRZXInvestorDetail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trzx.TRZXInvestorDetail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6DB85CD91E6EC3BB00AD7C0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 487PQPPTGA;
+				INFOPLIST_FILE = TRZXInvestorDetail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trzx.TRZXInvestorDetail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6DB85CDB1E6EC3BB00AD7C0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 487PQPPTGA;
+				INFOPLIST_FILE = TRZXInvestorDetailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trzx.TRZXInvestorDetailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRZXInvestorDetail.app/TRZXInvestorDetail";
+			};
+			name = Debug;
+		};
+		6DB85CDC1E6EC3BB00AD7C0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 487PQPPTGA;
+				INFOPLIST_FILE = TRZXInvestorDetailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trzx.TRZXInvestorDetailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRZXInvestorDetail.app/TRZXInvestorDetail";
+			};
+			name = Release;
+		};
+		6DB85CDE1E6EC3BB00AD7C0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 487PQPPTGA;
+				INFOPLIST_FILE = TRZXInvestorDetailUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trzx.TRZXInvestorDetailUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TRZXInvestorDetail;
+			};
+			name = Debug;
+		};
+		6DB85CDF1E6EC3BB00AD7C0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 487PQPPTGA;
+				INFOPLIST_FILE = TRZXInvestorDetailUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trzx.TRZXInvestorDetailUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TRZXInvestorDetail;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DB85CA51E6EC3BB00AD7C0A /* Build configuration list for PBXProject "TRZXInvestorDetail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB85CD51E6EC3BB00AD7C0A /* Debug */,
+				6DB85CD61E6EC3BB00AD7C0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DB85CD71E6EC3BB00AD7C0A /* Build configuration list for PBXNativeTarget "TRZXInvestorDetail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB85CD81E6EC3BB00AD7C0A /* Debug */,
+				6DB85CD91E6EC3BB00AD7C0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DB85CDA1E6EC3BB00AD7C0A /* Build configuration list for PBXNativeTarget "TRZXInvestorDetailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB85CDB1E6EC3BB00AD7C0A /* Debug */,
+				6DB85CDC1E6EC3BB00AD7C0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DB85CDD1E6EC3BB00AD7C0A /* Build configuration list for PBXNativeTarget "TRZXInvestorDetailUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB85CDE1E6EC3BB00AD7C0A /* Debug */,
+				6DB85CDF1E6EC3BB00AD7C0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DB85CA21E6EC3BB00AD7C0A /* Project object */;
+}
