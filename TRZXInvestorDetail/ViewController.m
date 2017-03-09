@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Target_TRZXInvestorDetail.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor cyanColor];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    UIViewController *investorDetail_vc = [[Target_TRZXInvestorDetail new] Action_InvestorDetailViewController:nil];
+    [self.navigationController pushViewController:investorDetail_vc animated:YES];
 }
 
 

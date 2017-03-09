@@ -7,5 +7,14 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'TRZXInvestorDetail' do
   # Uncomment this line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
+  pod 'Masonry'
+  pod 'MJExtension'
+  pod 'ZBCellConfig'
+  pod 'SDWebImage'
+  pod 'ReactiveCocoa', '~> 2.5’
+  
+  #  投融在线
+  pod 'TRZXKit'
+  pod 'TRZXNetwork'
  
 end

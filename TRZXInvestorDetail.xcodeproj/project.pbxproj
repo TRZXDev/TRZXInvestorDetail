@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102793624944342FF0183F06 /* libPods-TRZXInvestorDetail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EEA84FF4EB12DB75B523FB /* libPods-TRZXInvestorDetail.a */; };
 		6DB85CAF1E6EC3BB00AD7C0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB85CAE1E6EC3BB00AD7C0A /* main.m */; };
 		6DB85CB21E6EC3BB00AD7C0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB85CB11E6EC3BB00AD7C0A /* AppDelegate.m */; };
 		6DB85CB51E6EC3BB00AD7C0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB85CB41E6EC3BB00AD7C0A /* ViewController.m */; };
@@ -15,6 +16,19 @@
 		6DB85CBD1E6EC3BB00AD7C0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB85CBB1E6EC3BB00AD7C0A /* LaunchScreen.storyboard */; };
 		6DB85CC81E6EC3BB00AD7C0A /* TRZXInvestorDetailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB85CC71E6EC3BB00AD7C0A /* TRZXInvestorDetailTests.m */; };
 		6DB85CD31E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB85CD21E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests.m */; };
+		6DB85D271E6EE06500AD7C0A /* TRZXInvestorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB85D261E6EE06500AD7C0A /* TRZXInvestorDetailViewController.m */; };
+		6DD92B761E6FD52C00B61C6A /* TRZXInvestorDetailTableViewCoverHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92B751E6FD52C00B61C6A /* TRZXInvestorDetailTableViewCoverHeaderView.m */; };
+		6DD92B7D1E6FD75200B61C6A /* testIcon_backGroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92B7C1E6FD75200B61C6A /* testIcon_backGroundImage.png */; };
+		6DD92C091E7006C400B61C6A /* Target_TRZXInvestorDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92BFA1E7006C400B61C6A /* Target_TRZXInvestorDetail.m */; };
+		6DD92C0A1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_Gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92BFE1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_Gray@2x.png */; };
+		6DD92C0B1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_White@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92BFF1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_White@2x.png */; };
+		6DD92C0C1E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_Gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92C001E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_Gray@2x.png */; };
+		6DD92C0D1E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_White@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92C011E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_White@2x.png */; };
+		6DD92C0E1E7006C400B61C6A /* Icon_ProjectDetail_Collection_Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92C021E7006C400B61C6A /* Icon_ProjectDetail_Collection_Selected@2x.png */; };
+		6DD92C0F1E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_Gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92C031E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_Gray@2x.png */; };
+		6DD92C101E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_White@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92C041E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_White@2x.png */; };
+		6DD92C111E7006C400B61C6A /* TRZXNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92C061E7006C400B61C6A /* TRZXNavigationBar.m */; };
+		6DD92C121E7006C400B61C6A /* TRZXTableViewCoverHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92C081E7006C400B61C6A /* TRZXTableViewCoverHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F3FEEF86173597BE9C2D154 /* Pods-TRZXInvestorDetail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXInvestorDetail.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXInvestorDetail/Pods-TRZXInvestorDetail.debug.xcconfig"; sourceTree = "<group>"; };
 		6DB85CAA1E6EC3BB00AD7C0A /* TRZXInvestorDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXInvestorDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB85CAE1E6EC3BB00AD7C0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DB85CB01E6EC3BB00AD7C0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +66,27 @@
 		6DB85CCE1E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRZXInvestorDetailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB85CD21E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZXInvestorDetailUITests.m; sourceTree = "<group>"; };
 		6DB85CD41E6EC3BB00AD7C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DB85D251E6EE06500AD7C0A /* TRZXInvestorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXInvestorDetailViewController.h; sourceTree = "<group>"; };
+		6DB85D261E6EE06500AD7C0A /* TRZXInvestorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXInvestorDetailViewController.m; sourceTree = "<group>"; };
+		6DD92B741E6FD52C00B61C6A /* TRZXInvestorDetailTableViewCoverHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXInvestorDetailTableViewCoverHeaderView.h; sourceTree = "<group>"; };
+		6DD92B751E6FD52C00B61C6A /* TRZXInvestorDetailTableViewCoverHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXInvestorDetailTableViewCoverHeaderView.m; sourceTree = "<group>"; };
+		6DD92B7C1E6FD75200B61C6A /* testIcon_backGroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testIcon_backGroundImage.png; sourceTree = "<group>"; };
+		6DD92BF91E7006C400B61C6A /* Target_TRZXInvestorDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_TRZXInvestorDetail.h; sourceTree = "<group>"; };
+		6DD92BFA1E7006C400B61C6A /* Target_TRZXInvestorDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_TRZXInvestorDetail.m; sourceTree = "<group>"; };
+		6DD92BFB1E7006C400B61C6A /* TRZXInvestorDetailMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXInvestorDetailMacro.h; sourceTree = "<group>"; };
+		6DD92BFE1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_Gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Back_Normal_Gray@2x.png"; sourceTree = "<group>"; };
+		6DD92BFF1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_White@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Back_Normal_White@2x.png"; sourceTree = "<group>"; };
+		6DD92C001E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_Gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Collection_Normal_Gray@2x.png"; sourceTree = "<group>"; };
+		6DD92C011E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_White@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Collection_Normal_White@2x.png"; sourceTree = "<group>"; };
+		6DD92C021E7006C400B61C6A /* Icon_ProjectDetail_Collection_Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Collection_Selected@2x.png"; sourceTree = "<group>"; };
+		6DD92C031E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_Gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Share_Normal_Gray@2x.png"; sourceTree = "<group>"; };
+		6DD92C041E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_White@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Share_Normal_White@2x.png"; sourceTree = "<group>"; };
+		6DD92C051E7006C400B61C6A /* TRZXNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXNavigationBar.h; sourceTree = "<group>"; };
+		6DD92C061E7006C400B61C6A /* TRZXNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXNavigationBar.m; sourceTree = "<group>"; };
+		6DD92C071E7006C400B61C6A /* TRZXTableViewCoverHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXTableViewCoverHeaderView.h; sourceTree = "<group>"; };
+		6DD92C081E7006C400B61C6A /* TRZXTableViewCoverHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXTableViewCoverHeaderView.m; sourceTree = "<group>"; };
+		70EEA84FF4EB12DB75B523FB /* libPods-TRZXInvestorDetail.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXInvestorDetail.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E6C67E9B7B2F5DE992CA157 /* Pods-TRZXInvestorDetail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXInvestorDetail.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXInvestorDetail/Pods-TRZXInvestorDetail.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102793624944342FF0183F06 /* libPods-TRZXInvestorDetail.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +115,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14525673C51BBC162C9E1692 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F3FEEF86173597BE9C2D154 /* Pods-TRZXInvestorDetail.debug.xcconfig */,
+				9E6C67E9B7B2F5DE992CA157 /* Pods-TRZXInvestorDetail.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6DB85CA11E6EC3BB00AD7C0A = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +131,8 @@
 				6DB85CC61E6EC3BB00AD7C0A /* TRZXInvestorDetailTests */,
 				6DB85CD11E6EC3BB00AD7C0A /* TRZXInvestorDetailUITests */,
 				6DB85CAB1E6EC3BB00AD7C0A /* Products */,
+				14525673C51BBC162C9E1692 /* Pods */,
+				A25805B2BD55B71D97B22C84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +149,7 @@
 		6DB85CAC1E6EC3BB00AD7C0A /* TRZXInvestorDetail */ = {
 			isa = PBXGroup;
 			children = (
+				6DB85D1F1E6EC61400AD7C0A /* TRZXInvestorDetail */,
 				6DB85CB01E6EC3BB00AD7C0A /* AppDelegate.h */,
 				6DB85CB11E6EC3BB00AD7C0A /* AppDelegate.m */,
 				6DB85CB31E6EC3BB00AD7C0A /* ViewController.h */,
@@ -140,6 +189,104 @@
 			path = TRZXInvestorDetailUITests;
 			sourceTree = "<group>";
 		};
+		6DB85D1F1E6EC61400AD7C0A /* TRZXInvestorDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6DD92BF81E7006C400B61C6A /* Tool */,
+				6DB85D231E6EC61400AD7C0A /* ViewController */,
+				6DB85D221E6EC61400AD7C0A /* View */,
+				6DB85D241E6EC61400AD7C0A /* ViewModel */,
+				6DB85D201E6EC61400AD7C0A /* Model */,
+				6DD92B7B1E6FD73100B61C6A /* Resources */,
+			);
+			path = TRZXInvestorDetail;
+			sourceTree = "<group>";
+		};
+		6DB85D201E6EC61400AD7C0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6DB85D221E6EC61400AD7C0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DD92B741E6FD52C00B61C6A /* TRZXInvestorDetailTableViewCoverHeaderView.h */,
+				6DD92B751E6FD52C00B61C6A /* TRZXInvestorDetailTableViewCoverHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DB85D231E6EC61400AD7C0A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6DB85D251E6EE06500AD7C0A /* TRZXInvestorDetailViewController.h */,
+				6DB85D261E6EE06500AD7C0A /* TRZXInvestorDetailViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6DB85D241E6EC61400AD7C0A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6DD92B7B1E6FD73100B61C6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DD92B7C1E6FD75200B61C6A /* testIcon_backGroundImage.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6DD92BF81E7006C400B61C6A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				6DD92BF91E7006C400B61C6A /* Target_TRZXInvestorDetail.h */,
+				6DD92BFA1E7006C400B61C6A /* Target_TRZXInvestorDetail.m */,
+				6DD92BFB1E7006C400B61C6A /* TRZXInvestorDetailMacro.h */,
+				6DD92BFC1E7006C400B61C6A /* TRZXNavgitonTableViewHeaderView */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		6DD92BFC1E7006C400B61C6A /* TRZXNavgitonTableViewHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				6DD92BFD1E7006C400B61C6A /* res */,
+				6DD92C051E7006C400B61C6A /* TRZXNavigationBar.h */,
+				6DD92C061E7006C400B61C6A /* TRZXNavigationBar.m */,
+				6DD92C071E7006C400B61C6A /* TRZXTableViewCoverHeaderView.h */,
+				6DD92C081E7006C400B61C6A /* TRZXTableViewCoverHeaderView.m */,
+			);
+			path = TRZXNavgitonTableViewHeaderView;
+			sourceTree = "<group>";
+		};
+		6DD92BFD1E7006C400B61C6A /* res */ = {
+			isa = PBXGroup;
+			children = (
+				6DD92BFE1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_Gray@2x.png */,
+				6DD92BFF1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_White@2x.png */,
+				6DD92C001E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_Gray@2x.png */,
+				6DD92C011E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_White@2x.png */,
+				6DD92C021E7006C400B61C6A /* Icon_ProjectDetail_Collection_Selected@2x.png */,
+				6DD92C031E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_Gray@2x.png */,
+				6DD92C041E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_White@2x.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		A25805B2BD55B71D97B22C84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70EEA84FF4EB12DB75B523FB /* libPods-TRZXInvestorDetail.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +294,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DB85CD71E6EC3BB00AD7C0A /* Build configuration list for PBXNativeTarget "TRZXInvestorDetail" */;
 			buildPhases = (
+				2F5BC89885E08F7B371F5A23 /* [CP] Check Pods Manifest.lock */,
 				6DB85CA61E6EC3BB00AD7C0A /* Sources */,
 				6DB85CA71E6EC3BB00AD7C0A /* Frameworks */,
 				6DB85CA81E6EC3BB00AD7C0A /* Resources */,
+				1D6C0EEA9750C355EAF90D28 /* [CP] Embed Pods Frameworks */,
+				DECCAC5213AEE7BA82AD20BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,9 +400,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD92C0B1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_White@2x.png in Resources */,
+				6DD92C101E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_White@2x.png in Resources */,
+				6DD92C0C1E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_Gray@2x.png in Resources */,
+				6DD92C0F1E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_Gray@2x.png in Resources */,
 				6DB85CBD1E6EC3BB00AD7C0A /* LaunchScreen.storyboard in Resources */,
+				6DD92C0D1E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_White@2x.png in Resources */,
 				6DB85CBA1E6EC3BB00AD7C0A /* Assets.xcassets in Resources */,
+				6DD92C0A1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_Gray@2x.png in Resources */,
+				6DD92B7D1E6FD75200B61C6A /* testIcon_backGroundImage.png in Resources */,
 				6DB85CB81E6EC3BB00AD7C0A /* Main.storyboard in Resources */,
+				6DD92C0E1E7006C400B61C6A /* Icon_ProjectDetail_Collection_Selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,12 +430,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D6C0EEA9750C355EAF90D28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXInvestorDetail/Pods-TRZXInvestorDetail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F5BC89885E08F7B371F5A23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DECCAC5213AEE7BA82AD20BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXInvestorDetail/Pods-TRZXInvestorDetail-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6DB85CA61E6EC3BB00AD7C0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6DB85CB51E6EC3BB00AD7C0A /* ViewController.m in Sources */,
+				6DD92C091E7006C400B61C6A /* Target_TRZXInvestorDetail.m in Sources */,
+				6DD92C121E7006C400B61C6A /* TRZXTableViewCoverHeaderView.m in Sources */,
+				6DD92C111E7006C400B61C6A /* TRZXNavigationBar.m in Sources */,
+				6DD92B761E6FD52C00B61C6A /* TRZXInvestorDetailTableViewCoverHeaderView.m in Sources */,
+				6DB85D271E6EE06500AD7C0A /* TRZXInvestorDetailViewController.m in Sources */,
 				6DB85CB21E6EC3BB00AD7C0A /* AppDelegate.m in Sources */,
 				6DB85CAF1E6EC3BB00AD7C0A /* main.m in Sources */,
 			);
@@ -424,6 +635,7 @@
 		};
 		6DB85CD81E6EC3BB00AD7C0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F3FEEF86173597BE9C2D154 /* Pods-TRZXInvestorDetail.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 487PQPPTGA;
@@ -437,6 +649,7 @@
 		};
 		6DB85CD91E6EC3BB00AD7C0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E6C67E9B7B2F5DE992CA157 /* Pods-TRZXInvestorDetail.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 487PQPPTGA;
