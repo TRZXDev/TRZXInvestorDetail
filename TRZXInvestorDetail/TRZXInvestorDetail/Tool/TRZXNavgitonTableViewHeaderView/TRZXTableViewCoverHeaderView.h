@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TRZXNavigationBar.h"
 
-@interface TRZXTableViewCoverHeaderView : UIImageView
+@interface TRZXTableViewCoverHeaderView : UIView
 
 /**
  初始化方法
@@ -48,5 +48,12 @@
  导航栏个按钮点击事件回调
  */
 @property (nonatomic, copy) void(^onNavigationBarActionBlock)(ENavigationBarAction action);
+
+
+- (void)addOwnViews;
+
+- (void)layoutFrameOfSubViews;
+
+- (void)receiveActions;
 
 @end

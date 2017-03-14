@@ -8,6 +8,12 @@
 
 #import "TRZXTableViewCoverHeaderView.h"
 
+@class TRZXInvestorDetailModel;
+
 @interface TRZXInvestorDetailTableViewCoverHeaderView : TRZXTableViewCoverHeaderView
+
+@property (nonatomic, strong) TRZXInvestorDetailModel *model;
+
+@property (nonatomic, copy) void (^currentSelectidIsInvestor)(BOOL isSelectedInvestor);
 
 @end

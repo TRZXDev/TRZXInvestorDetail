@@ -84,6 +84,7 @@
         _coverImageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         _coverImageView.clipsToBounds = YES;
         _coverImageView.contentMode = UIViewContentModeScaleAspectFill;
+        _coverImageView.userInteractionEnabled = YES;
     }
     return _coverImageView;
 }

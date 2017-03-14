@@ -10,6 +10,22 @@
 #import "TRZXInvestorDetailMacro.h"
 #import "TRZXInvestorDetailTableViewCoverHeaderView.h"
 #import <ZBCellConfig/ZBCellConfig.h>
+#import "TRZXInvestorDetailViewModel.h"
+
+/// model
+#import "TRZXInvestorDetailModel.h"
+
+/// cell
+#import "TRZXInvestorDetailNoMsgTableViewCell.h"
+#import "TRZXInvestorDetailLeftRightTextTableViewCell.h"
+#import "TRZXInvestorBaseInfoTableViewCell.h"
+#import "TRZXInvestorDetailOnlyTextTableViewCell.h"
+#import "TRZXInvestorDetailCasesTableViewCell.h"
+#import "TRZXInvestorDeatailCasesMoreTableViewCell.h"
+#import "TRZXInvestorDetailInvestorsTableViewCell.h"
+
+/// header
+#import "TRZXInvestorDetailTextSectionHeader.h"
 
 @interface TRZXInvestorDetailViewController ()
 <
@@ -21,6 +37,14 @@ UITableViewDataSource
 
 @property (nonatomic, strong) TRZXInvestorDetailTableViewCoverHeaderView *tableViewHeaderView;
 
+@property (nonatomic, strong) TRZXInvestorDetailViewModel *investorDetailVM;
+
+/**
+ 存储 cell
+ */
+@property (nonatomic, strong) NSMutableArray <NSArray <ZBCellConfig *> *> *sectionArray;
+
+@property (nonatomic, assign) BOOL isSelectedInvestor;
 
 @end
 
@@ -38,7 +62,7 @@ UITableViewDataSource
     
     [self receiveActions];
     
-    [self reloadData];
+    [self reloadData:YES];
     
 }
 
@@ -61,42 +85,210 @@ UITableViewDataSource
 }
 - (void)receiveActions
 {
-    __weak __typeof(&*self)weakSelf = self;
+    @weakify(self);
     [_tableViewHeaderView setOnNavigationBarActionBlock:^(ENavigationBarAction action) {
+        @strongify(self);
         switch (action) {
             case ENavigationBarAction_Back:
-                [weakSelf.navigationController popViewControllerAnimated:YES];
+                [self.navigationController popViewControllerAnimated:YES];
                 break;
                 
             default:
                 break;
         }
     }];
+    
+    [_tableViewHeaderView setCurrentSelectidIsInvestor:^(BOOL isSelectedInvestor) {
+        @strongify(self);
+        [self reloadData:isSelectedInvestor];
+    }];
+    
 }
-- (void)reloadData
+- (void)reloadData:(BOOL)isSelectedInvestor
 {
-    _tableViewHeaderView.title = @"中户恭贺啦啦工期狗不理德拉斯全qu666";
+    _isSelectedInvestor = isSelectedInvestor;
+    
+    if (isSelectedInvestor) {
+        
+        self.investorDetailVM.investorId = self.investorId;
+        [self.investorDetailVM.requestSignal_InvestorDetail subscribeNext:^(id x) {
+            
+            [self configSubViews];
+            
+            // 配置 cell
+            [self configSectionCells];
+            
+        } error:^(NSError *error) {
+            
+        }];
+        
+    }else {
+        
+        [self.investorDetailVM.requestSignal_Organizatioin subscribeNext:^(id x) {
+            
+            // 配置 cell
+            [self configSectionCells];
+            
+        } error:^(NSError *error) {
+            
+            
+        }];
+        
+    }
+    
+}
+
+- (void)configSectionCells
+{
+    [self.sectionArray removeAllObjects];
+    
+    TRZXInvestorDetailModel *investorDetailModel = self.investorDetailVM.investorDetailModel;
+    
+    ZBCellConfig *noMessageCellConfig = [ZBCellConfig new];
+    noMessageCellConfig.cellClass = [TRZXInvestorDetailNoMsgTableViewCell class];
+    noMessageCellConfig.title = @"投资信息";
+    noMessageCellConfig.sectionHeaderClass = [TRZXInvestorDetailTextSectionHeader class];
+    noMessageCellConfig.showSectionHeaderInfoMethod = @selector(setTextString:);
+    noMessageCellConfig.sectionHeaderHeight = 35;
+    [self.sectionArray addObject:@[noMessageCellConfig]];
+    
+    NSMutableArray *leftRightTextCellConfigs = [NSMutableArray new];
+    for (int i = 0; i <  investorDetailModel.data.investmentStages.count; i++) {
+        ZBCellConfig *leftRightTextCellConfig = [ZBCellConfig new];
+        leftRightTextCellConfig.cellClass = [TRZXInvestorDetailLeftRightTextTableViewCell class];
+        leftRightTextCellConfig.showCellInfoMethod = @selector(setInvestmentStage:);
+        leftRightTextCellConfig.title = @"投资阶段";
+        [leftRightTextCellConfigs addObject:leftRightTextCellConfig];
+    }
+    [self.sectionArray addObject:leftRightTextCellConfigs];
+    
+    NSMutableArray *investorBaseInfoCellConfigs = [NSMutableArray new];
+    for (int i = 0; i < 3; i++) {
+        ZBCellConfig *cellConfig = [ZBCellConfig new];
+        cellConfig.title = @"投资基本信息";
+        cellConfig.cellClass = [TRZXInvestorBaseInfoTableViewCell class];
+        cellConfig.showCellInfoMethod = @selector(setInvestorData:indexPath:isInvestor:);
+        [investorBaseInfoCellConfigs addObject:cellConfig];
+    }
+    [self.sectionArray addObject:investorBaseInfoCellConfigs];
+    
+    ZBCellConfig *investorDetailInfo = [ZBCellConfig new];
+    investorDetailInfo.title = _isSelectedInvestor ? @"个人介绍" : @"机构简介";
+    investorDetailInfo.cellClass = [TRZXInvestorDetailOnlyTextTableViewCell class];
+    investorDetailInfo.showCellInfoMethod = @selector(setDetailString:);
+    investorDetailInfo.showSectionHeaderInfoMethod = @selector(setTextString:);
+    investorDetailInfo.sectionHeaderClass = [TRZXInvestorDetailTextSectionHeader class];
+    investorDetailInfo.sectionHeaderHeight = 35;
+    [self.sectionArray addObject:@[investorDetailInfo]];
+    
+    NSMutableArray *investorCases = [NSMutableArray new];
+    for (int i = 0; i < (investorDetailModel.data.investmentCases.count > 5 ? 5 : investorDetailModel.data.investmentCases.count); i++) {
+        ZBCellConfig *cellConfig = [ZBCellConfig new];
+        cellConfig.cellClass = [TRZXInvestorDetailCasesTableViewCell class];
+        cellConfig.title = [NSString stringWithFormat:@"投资案例(%ld)", investorDetailModel.data.investmentCases.count];
+        cellConfig.showCellInfoMethod = @selector(setInvestmentCase:);
+        cellConfig.showSectionHeaderInfoMethod = @selector(setTextString:);
+        cellConfig.sectionHeaderClass = [TRZXInvestorDetailTextSectionHeader class];
+        cellConfig.sectionHeaderHeight = 35;
+        [investorCases addObject:cellConfig];
+    }
+    [self.sectionArray addObject:investorCases];
+    
+    if (investorDetailModel.data.investmentCases.count > 5) {
+        ZBCellConfig *investorCasesMoreCellConfig = [ZBCellConfig new];
+        investorCasesMoreCellConfig.cellClass = [TRZXInvestorDeatailCasesMoreTableViewCell class];
+        investorCasesMoreCellConfig.title = @"查看更多";
+        [self.sectionArray addObject:@[investorCasesMoreCellConfig]];
+    }
+    
+    NSMutableArray *investors = [NSMutableArray new];
+    for (int i = 0; i < investorDetailModel.data.orgUserAuthList.count; i++) {
+        ZBCellConfig *cellConfig = [ZBCellConfig new];
+        cellConfig.cellClass = [TRZXInvestorDetailInvestorsTableViewCell class];
+        cellConfig.title = @"投资人";
+        cellConfig.showCellInfoMethod = @selector(setOrgUserAuthList:);
+        cellConfig.showSectionHeaderInfoMethod = @selector(setTextString:);
+        cellConfig.sectionHeaderClass = [TRZXInvestorDetailTextSectionHeader class];
+        cellConfig.sectionHeaderHeight = 35;
+        [investors addObject:cellConfig];
+    }
+    [self.sectionArray addObject:investors];
+    
+    [_tableView reloadData];
+}
+
+- (void)configSubViews
+{
+    _tableViewHeaderView.model = _investorDetailVM.investorDetailModel;
 }
 
 #pragma mark - <UITableViewDelegate/DataSource>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return self.sectionArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return self.sectionArray[section].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:0 reuseIdentifier:@"cell"];
+    ZBCellConfig *cellConfig = self.sectionArray[indexPath.section][indexPath.row];
+    
+    TRZXInvestorDetailModel *investorDetailModel = self.investorDetailVM.investorDetailModel;
+    
+    UITableViewCell *cell = nil;
+    
+    if ([cellConfig isTitle:@"投资阶段"]){
+        
+        NSArray <InvestmentStages *> *investmentStages = investorDetailModel.data.investmentStages;
+        cell = [cellConfig cellOfCellConfigWithTableView:tableView dataModels:@[investmentStages[indexPath.row]] isNib:YES];
+    }else if ([cellConfig isTitle:@"投资基本信息"]) {
+        
+        cell = [cellConfig cellOfCellConfigWithTableView:tableView dataModels:@[investorDetailModel.data, indexPath, [NSNumber numberWithBool:_isSelectedInvestor]] isNib:YES];
+        
+    }else if ([cellConfig isTitle:_isSelectedInvestor ? @"个人介绍" : @"机构简介"]) {
+        
+        NSString *infoString = investorDetailModel.data.abstractz;
+        cell = [cellConfig cellOfCellConfigWithTableView:tableView dataModels:@[infoString] isNib:YES];
+        
+    }else if ([cellConfig.title rangeOfString:@"投资案例"].location !=NSNotFound) {
+        
+        cell = [cellConfig cellOfCellConfigWithTableView:tableView dataModels:@[investorDetailModel.data.investmentCases[indexPath.row]] isNib:YES];
+        
+    }else if ([cellConfig isTitle:@"投资人"]) {
+        
+        cell = [cellConfig cellOfCellConfigWithTableView:tableView dataModels:@[investorDetailModel.data.orgUserAuthList[indexPath.row]] isNib:YES];
+        
+    }else {
+        
+        cell = [cellConfig cellOfCellConfigWithTableView:tableView dataModels:nil isNib:YES];
     }
-    cell.backgroundColor = [UIColor yellowColor];
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return self.sectionArray[section].firstObject.sectionHeaderHeight;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    ZBCellConfig *cellConfig = _sectionArray[section].firstObject;
+    return [cellConfig sectionHederOfCellConfigWithTableView:tableView dataModels:@[cellConfig.title?cellConfig.title:@""] isNib:YES];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ZBCellConfig *cellConfig = self.sectionArray[indexPath.section][indexPath.row];
+    if ([cellConfig isTitle:@"查看更多"]) {
+        
+    }
 }
 
 #pragma mark - <Setter/Getter>
@@ -116,7 +308,7 @@ UITableViewDataSource
         //        _tableView.estimatedSectionHeaderHeight = 10;
         //        _tableView.sectionHeaderHeight = UITableViewAutomaticDimension;
         // 去除cell分割线
-//        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _tableView;
 }
@@ -125,10 +317,25 @@ UITableViewDataSource
 {
     if (!_tableViewHeaderView) {
         _tableViewHeaderView = [[TRZXInvestorDetailTableViewCoverHeaderView alloc] initWithScrollView:_tableView];
-        _tableViewHeaderView.collectButtonHidden = YES;
     }
     return _tableViewHeaderView;
 }
 
+- (TRZXInvestorDetailViewModel *)investorDetailVM
+{
+    if (!_investorDetailVM) {
+        _investorDetailVM = [[TRZXInvestorDetailViewModel alloc] init];
+    }
+    return _investorDetailVM;
+}
+
+
+- (NSMutableArray<NSArray<ZBCellConfig *> *> *)sectionArray
+{
+    if (!_sectionArray) {
+        _sectionArray = [[NSMutableArray alloc] init];
+    }
+    return _sectionArray;
+}
 
 @end

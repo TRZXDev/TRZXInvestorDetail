@@ -15,9 +15,13 @@
 #import <MJExtension/MJExtension.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <YYText/YYText.h>
 
 #import <TRZXKit/TRZXKit.h>
 #import <TRZXNetwork/TRZXNetwork.h>
 
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
 
 #endif /* TRZXInvestorDetailMacro_h */

@@ -12,6 +12,7 @@ target 'TRZXInvestorDetail' do
   pod 'ZBCellConfig'
   pod 'SDWebImage'
   pod 'ReactiveCocoa', '~> 2.5’
+  pod 'YYText'
   
   #  投融在线
   pod 'TRZXKit'

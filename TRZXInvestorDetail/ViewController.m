@@ -23,7 +23,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    UIViewController *investorDetail_vc = [[Target_TRZXInvestorDetail new] Action_InvestorDetailViewController:nil];
+    UIViewController *investorDetail_vc = [[Target_TRZXInvestorDetail new] Action_InvestorDetailViewController:@{@"investorId":@"c9f17eb7e172406c94aedcdedb26a0a7"}];
     [self.navigationController pushViewController:investorDetail_vc animated:YES];
 }
 

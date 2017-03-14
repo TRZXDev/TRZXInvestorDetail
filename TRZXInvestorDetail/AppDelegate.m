@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TRZXInvestorDetailMacro.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    NSMutableDictionary *headers = [[NSMutableDictionary alloc]init];
+    [headers setValue:@"e69f0f1c34ec89d17c422c74a0074806" forKey:@"token"];
+    [headers setValue:@"4164a5cf024a4d38b360e9548cd1caf4" forKey:@"userId"];
+    
+    [TRZXNetwork configWithBaseURL:@"http://test.mmwipo.com:8088/"];
+    [TRZXNetwork configWithNewBaseURL:@"http://123.56.228.107:8081/"];
+    
+    // 配置请求头
+    [TRZXNetwork configHttpHeaders:headers];
+    
     return YES;
 }
 
