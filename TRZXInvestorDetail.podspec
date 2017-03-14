@@ -142,5 +142,7 @@ Pod::Spec.new do |s|
   s.dependency "YYText"
   s.dependency "TRZXKit"
   s.dependency "TRZXNetwork"
+  s.dependency "SDWebImage"
+
 
 end

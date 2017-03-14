@@ -37,6 +37,7 @@
 		6DD875E41E77957A0062C84B /* TRZXInvestorDeatailCasesMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD875E21E77957A0062C84B /* TRZXInvestorDeatailCasesMoreTableViewCell.xib */; };
 		6DD875E81E779B530062C84B /* TRZXInvestorDetailInvestorsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD875E61E779B530062C84B /* TRZXInvestorDetailInvestorsTableViewCell.m */; };
 		6DD875E91E779B530062C84B /* TRZXInvestorDetailInvestorsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD875E71E779B530062C84B /* TRZXInvestorDetailInvestorsTableViewCell.xib */; };
+		6DD875EC1E77BDD90062C84B /* TRZXInvestorCasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD875EB1E77BDD90062C84B /* TRZXInvestorCasesViewController.m */; };
 		6DD92B761E6FD52C00B61C6A /* TRZXInvestorDetailTableViewCoverHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92B751E6FD52C00B61C6A /* TRZXInvestorDetailTableViewCoverHeaderView.m */; };
 		6DD92C091E7006C400B61C6A /* Target_TRZXInvestorDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92BFA1E7006C400B61C6A /* Target_TRZXInvestorDetail.m */; };
 		6DD92C0A1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_Gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92BFE1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_Gray@2x.png */; };
@@ -117,6 +118,8 @@
 		6DD875E51E779B530062C84B /* TRZXInvestorDetailInvestorsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXInvestorDetailInvestorsTableViewCell.h; sourceTree = "<group>"; };
 		6DD875E61E779B530062C84B /* TRZXInvestorDetailInvestorsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXInvestorDetailInvestorsTableViewCell.m; sourceTree = "<group>"; };
 		6DD875E71E779B530062C84B /* TRZXInvestorDetailInvestorsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRZXInvestorDetailInvestorsTableViewCell.xib; sourceTree = "<group>"; };
+		6DD875EA1E77BDD90062C84B /* TRZXInvestorCasesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXInvestorCasesViewController.h; sourceTree = "<group>"; };
+		6DD875EB1E77BDD90062C84B /* TRZXInvestorCasesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXInvestorCasesViewController.m; sourceTree = "<group>"; };
 		6DD92B741E6FD52C00B61C6A /* TRZXInvestorDetailTableViewCoverHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXInvestorDetailTableViewCoverHeaderView.h; sourceTree = "<group>"; };
 		6DD92B751E6FD52C00B61C6A /* TRZXInvestorDetailTableViewCoverHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXInvestorDetailTableViewCoverHeaderView.m; sourceTree = "<group>"; };
 		6DD92BF91E7006C400B61C6A /* Target_TRZXInvestorDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_TRZXInvestorDetail.h; sourceTree = "<group>"; };
@@ -288,6 +291,8 @@
 			children = (
 				6DB85D251E6EE06500AD7C0A /* TRZXInvestorDetailViewController.h */,
 				6DB85D261E6EE06500AD7C0A /* TRZXInvestorDetailViewController.m */,
+				6DD875EA1E77BDD90062C84B /* TRZXInvestorCasesViewController.h */,
+				6DD875EB1E77BDD90062C84B /* TRZXInvestorCasesViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -586,6 +591,7 @@
 				6DB85CB21E6EC3BB00AD7C0A /* AppDelegate.m in Sources */,
 				6DB85CAF1E6EC3BB00AD7C0A /* main.m in Sources */,
 				6DD644291E72890B00345D68 /* TRZXInvestorDetailModel.m in Sources */,
+				6DD875EC1E77BDD90062C84B /* TRZXInvestorCasesViewController.m in Sources */,
 				6DD644181E724AA900345D68 /* TRZXInvestorDetailViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

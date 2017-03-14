@@ -27,6 +27,9 @@
 /// header
 #import "TRZXInvestorDetailTextSectionHeader.h"
 
+/// vc
+#import "TRZXInvestorCasesViewController.h"
+
 @interface TRZXInvestorDetailViewController ()
 <
 UITableViewDelegate,
@@ -69,7 +72,7 @@ UITableViewDataSource
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 - (void)addOwnViews
@@ -286,7 +289,21 @@ UITableViewDataSource
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     ZBCellConfig *cellConfig = self.sectionArray[indexPath.section][indexPath.row];
+    
+    TRZXInvestorDetailModel *investorDetailModel = self.investorDetailVM.investorDetailModel;
+    
     if ([cellConfig isTitle:@"查看更多"]) {
+        
+        TRZXInvestorCasesViewController *investorCases_vc = [TRZXInvestorCasesViewController new];
+        investorCases_vc.investmentCases = investorDetailModel.data.investmentCases;
+        [self.navigationController pushViewController:investorCases_vc animated:YES];
+        
+    }else if ([cellConfig isTitle:@"投资人"]) {
+        
+        
+        TRZXInvestorDetailViewController *investorDetail_vc = [TRZXInvestorDetailViewController new];
+        investorDetail_vc.investorId = [investorDetailModel.data.orgUserAuthList[indexPath.row] mid];
+        [self.navigationController pushViewController:investorDetail_vc animated:YES];
         
     }
 }

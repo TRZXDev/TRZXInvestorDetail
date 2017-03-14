@@ -25,7 +25,7 @@
     _detailString = detailString;
     
     //                1.创建可变字符串
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:detailString];
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:detailString?detailString:@""];
     //                2.设置行间距
     NSMutableParagraphStyle *paragraphStyle =
     [[NSMutableParagraphStyle alloc]init];
