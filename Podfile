@@ -17,5 +17,6 @@ target 'TRZXInvestorDetail' do
   #  投融在线
   pod 'TRZXKit'
   pod 'TRZXNetwork'
+  pod 'TRZXNavigationTableViewHeaderView'
  
 end

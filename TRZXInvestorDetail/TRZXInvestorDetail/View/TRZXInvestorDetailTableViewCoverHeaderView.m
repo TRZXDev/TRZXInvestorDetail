@@ -96,27 +96,25 @@
     [_investorImageView.gestureRecognizers.firstObject.rac_gestureSignal subscribeNext:^(id x) {
         @strongify(self);
         
-        if (_isSelectedInvestor == YES) return;
-        self.isSelectedInvestor = YES;
-        
-        if (self.currentSelectidIsInvestor) {
-            self.currentSelectidIsInvestor(_isSelectedInvestor);
-        }
-        
-        [self setModel:_model];
+        [self headImageDidTop:YES];
     }];
     
     [_organizatioinImageView.gestureRecognizers.firstObject.rac_gestureSignal subscribeNext:^(id x) {
         @strongify(self);
         
-        if (_isSelectedInvestor == NO) return;
-        self.isSelectedInvestor = NO;
-        
-        if (self.currentSelectidIsInvestor) {
-            self.currentSelectidIsInvestor(_isSelectedInvestor);
-        }
-        [self setModel:_model];
+        [self headImageDidTop:NO];
     }];
+}
+
+- (void)headImageDidTop:(BOOL)isSelectedInvestor
+{
+    if (_isSelectedInvestor == isSelectedInvestor) return;
+    self.isSelectedInvestor = isSelectedInvestor;
+    
+    if (self.currentSelectidIsInvestor) {
+        self.currentSelectidIsInvestor(_isSelectedInvestor);
+    }
+    [self setModel:_model];
 }
 
 #pragma mark - <Setter/Getter>

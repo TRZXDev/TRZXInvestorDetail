@@ -319,7 +319,7 @@ UITableViewDataSource
         // 设置背景色
 //        _tableView.backgroundColor = kTRZXBGrayColor;
         // 自动计算cell高度
-        _tableView.estimatedRowHeight = 80.0f;
+        _tableView.estimatedRowHeight = 120.0f;
         // iOS8 系统中 rowHeight 的默认值已经设置成了 UITableViewAutomaticDimension
         _tableView.rowHeight = UITableViewAutomaticDimension;
         //        _tableView.estimatedSectionHeaderHeight = 10;

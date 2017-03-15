@@ -40,15 +40,6 @@
 		6DD875EC1E77BDD90062C84B /* TRZXInvestorCasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD875EB1E77BDD90062C84B /* TRZXInvestorCasesViewController.m */; };
 		6DD92B761E6FD52C00B61C6A /* TRZXInvestorDetailTableViewCoverHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92B751E6FD52C00B61C6A /* TRZXInvestorDetailTableViewCoverHeaderView.m */; };
 		6DD92C091E7006C400B61C6A /* Target_TRZXInvestorDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92BFA1E7006C400B61C6A /* Target_TRZXInvestorDetail.m */; };
-		6DD92C0A1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_Gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92BFE1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_Gray@2x.png */; };
-		6DD92C0B1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_White@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92BFF1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_White@2x.png */; };
-		6DD92C0C1E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_Gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92C001E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_Gray@2x.png */; };
-		6DD92C0D1E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_White@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92C011E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_White@2x.png */; };
-		6DD92C0E1E7006C400B61C6A /* Icon_ProjectDetail_Collection_Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92C021E7006C400B61C6A /* Icon_ProjectDetail_Collection_Selected@2x.png */; };
-		6DD92C0F1E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_Gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92C031E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_Gray@2x.png */; };
-		6DD92C101E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_White@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92C041E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_White@2x.png */; };
-		6DD92C111E7006C400B61C6A /* TRZXNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92C061E7006C400B61C6A /* TRZXNavigationBar.m */; };
-		6DD92C121E7006C400B61C6A /* TRZXTableViewCoverHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92C081E7006C400B61C6A /* TRZXTableViewCoverHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,17 +116,6 @@
 		6DD92BF91E7006C400B61C6A /* Target_TRZXInvestorDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_TRZXInvestorDetail.h; sourceTree = "<group>"; };
 		6DD92BFA1E7006C400B61C6A /* Target_TRZXInvestorDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_TRZXInvestorDetail.m; sourceTree = "<group>"; };
 		6DD92BFB1E7006C400B61C6A /* TRZXInvestorDetailMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXInvestorDetailMacro.h; sourceTree = "<group>"; };
-		6DD92BFE1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_Gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Back_Normal_Gray@2x.png"; sourceTree = "<group>"; };
-		6DD92BFF1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_White@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Back_Normal_White@2x.png"; sourceTree = "<group>"; };
-		6DD92C001E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_Gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Collection_Normal_Gray@2x.png"; sourceTree = "<group>"; };
-		6DD92C011E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_White@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Collection_Normal_White@2x.png"; sourceTree = "<group>"; };
-		6DD92C021E7006C400B61C6A /* Icon_ProjectDetail_Collection_Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Collection_Selected@2x.png"; sourceTree = "<group>"; };
-		6DD92C031E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_Gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Share_Normal_Gray@2x.png"; sourceTree = "<group>"; };
-		6DD92C041E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_White@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Share_Normal_White@2x.png"; sourceTree = "<group>"; };
-		6DD92C051E7006C400B61C6A /* TRZXNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXNavigationBar.h; sourceTree = "<group>"; };
-		6DD92C061E7006C400B61C6A /* TRZXNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXNavigationBar.m; sourceTree = "<group>"; };
-		6DD92C071E7006C400B61C6A /* TRZXTableViewCoverHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXTableViewCoverHeaderView.h; sourceTree = "<group>"; };
-		6DD92C081E7006C400B61C6A /* TRZXTableViewCoverHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXTableViewCoverHeaderView.m; sourceTree = "<group>"; };
 		70EEA84FF4EB12DB75B523FB /* libPods-TRZXInvestorDetail.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXInvestorDetail.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E6C67E9B7B2F5DE992CA157 /* Pods-TRZXInvestorDetail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXInvestorDetail.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXInvestorDetail/Pods-TRZXInvestorDetail.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -330,35 +310,8 @@
 				6DD92BF91E7006C400B61C6A /* Target_TRZXInvestorDetail.h */,
 				6DD92BFA1E7006C400B61C6A /* Target_TRZXInvestorDetail.m */,
 				6DD92BFB1E7006C400B61C6A /* TRZXInvestorDetailMacro.h */,
-				6DD92BFC1E7006C400B61C6A /* TRZXNavgitonTableViewHeaderView */,
 			);
 			path = Tool;
-			sourceTree = "<group>";
-		};
-		6DD92BFC1E7006C400B61C6A /* TRZXNavgitonTableViewHeaderView */ = {
-			isa = PBXGroup;
-			children = (
-				6DD92BFD1E7006C400B61C6A /* res */,
-				6DD92C051E7006C400B61C6A /* TRZXNavigationBar.h */,
-				6DD92C061E7006C400B61C6A /* TRZXNavigationBar.m */,
-				6DD92C071E7006C400B61C6A /* TRZXTableViewCoverHeaderView.h */,
-				6DD92C081E7006C400B61C6A /* TRZXTableViewCoverHeaderView.m */,
-			);
-			path = TRZXNavgitonTableViewHeaderView;
-			sourceTree = "<group>";
-		};
-		6DD92BFD1E7006C400B61C6A /* res */ = {
-			isa = PBXGroup;
-			children = (
-				6DD92BFE1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_Gray@2x.png */,
-				6DD92BFF1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_White@2x.png */,
-				6DD92C001E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_Gray@2x.png */,
-				6DD92C011E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_White@2x.png */,
-				6DD92C021E7006C400B61C6A /* Icon_ProjectDetail_Collection_Selected@2x.png */,
-				6DD92C031E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_Gray@2x.png */,
-				6DD92C041E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_White@2x.png */,
-			);
-			path = res;
 			sourceTree = "<group>";
 		};
 		A25805B2BD55B71D97B22C84 /* Frameworks */ = {
@@ -482,26 +435,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DD92C0B1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_White@2x.png in Resources */,
 				6DD875BD1E7672660062C84B /* TRZXInvestorDetailNoMsgTableViewCell.xib in Resources */,
 				6DD875E91E779B530062C84B /* TRZXInvestorDetailInvestorsTableViewCell.xib in Resources */,
-				6DD92C101E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_White@2x.png in Resources */,
 				6DD6442D1E728D1100345D68 /* Icon_PlaceholderImage.png in Resources */,
-				6DD92C0C1E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_Gray@2x.png in Resources */,
 				6DD875DA1E76A7DD0062C84B /* Icon_ProjectDetail_ProjectHistory_RedDot@2x.png in Resources */,
-				6DD92C0F1E7006C400B61C6A /* Icon_ProjectDetail_Share_Normal_Gray@2x.png in Resources */,
 				6DB85CBD1E6EC3BB00AD7C0A /* LaunchScreen.storyboard in Resources */,
-				6DD92C0D1E7006C400B61C6A /* Icon_ProjectDetail_Collection_Normal_White@2x.png in Resources */,
 				6DB85CBA1E6EC3BB00AD7C0A /* Assets.xcassets in Resources */,
 				6DD875E41E77957A0062C84B /* TRZXInvestorDeatailCasesMoreTableViewCell.xib in Resources */,
-				6DD92C0A1E7006C400B61C6A /* Icon_ProjectDetail_Back_Normal_Gray@2x.png in Resources */,
 				6DD875DF1E778FF30062C84B /* TRZXInvestorDetailCasesTableViewCell.xib in Resources */,
 				6DD875C41E7674390062C84B /* TRZXInvestorDetailTextSectionHeader.xib in Resources */,
 				6DD875D31E769F810062C84B /* TRZXInvestorDetailOnlyTextTableViewCell.xib in Resources */,
 				6DD875C91E767BA40062C84B /* TRZXInvestorDetailLeftRightTextTableViewCell.xib in Resources */,
 				6DD875CE1E768B260062C84B /* TRZXInvestorBaseInfoTableViewCell.xib in Resources */,
 				6DB85CB81E6EC3BB00AD7C0A /* Main.storyboard in Resources */,
-				6DD92C0E1E7006C400B61C6A /* Icon_ProjectDetail_Collection_Selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,8 +522,6 @@
 			files = (
 				6DB85CB51E6EC3BB00AD7C0A /* ViewController.m in Sources */,
 				6DD92C091E7006C400B61C6A /* Target_TRZXInvestorDetail.m in Sources */,
-				6DD92C121E7006C400B61C6A /* TRZXTableViewCoverHeaderView.m in Sources */,
-				6DD92C111E7006C400B61C6A /* TRZXNavigationBar.m in Sources */,
 				6DD875E81E779B530062C84B /* TRZXInvestorDetailInvestorsTableViewCell.m in Sources */,
 				6DD875BC1E7672660062C84B /* TRZXInvestorDetailNoMsgTableViewCell.m in Sources */,
 				6DD875E31E77957A0062C84B /* TRZXInvestorDeatailCasesMoreTableViewCell.m in Sources */,
