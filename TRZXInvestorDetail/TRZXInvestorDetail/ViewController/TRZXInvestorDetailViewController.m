@@ -89,7 +89,7 @@ UITableViewDataSource
 - (void)receiveActions
 {
     @weakify(self);
-    [_tableViewHeaderView setOnNavigationBarActionBlock:^(ENavigationBarAction action) {
+    [_tableViewHeaderView setOnNavigationBarActionBlock:^(ENavigationBarAction action, UIButton *button) {
         @strongify(self);
         switch (action) {
             case ENavigationBarAction_Back:
