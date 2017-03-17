@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		102793624944342FF0183F06 /* libPods-TRZXInvestorDetail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EEA84FF4EB12DB75B523FB /* libPods-TRZXInvestorDetail.a */; };
-		6D561D3A1E7A32D400E0D507 /* Icon_NavigationBar_Back_Normal_Gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D561D391E7A32D400E0D507 /* Icon_NavigationBar_Back_Normal_Gray@2x.png */; };
+		6D561D3A1E7A32D400E0D507 /* Icon_ProjectDetail_Back_Normal_Gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D561D391E7A32D400E0D507 /* Icon_ProjectDetail_Back_Normal_Gray@2x.png */; };
 		6DB85CAF1E6EC3BB00AD7C0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB85CAE1E6EC3BB00AD7C0A /* main.m */; };
 		6DB85CB21E6EC3BB00AD7C0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB85CB11E6EC3BB00AD7C0A /* AppDelegate.m */; };
 		6DB85CB51E6EC3BB00AD7C0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB85CB41E6EC3BB00AD7C0A /* ViewController.m */; };
@@ -62,7 +62,7 @@
 
 /* Begin PBXFileReference section */
 		4F3FEEF86173597BE9C2D154 /* Pods-TRZXInvestorDetail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXInvestorDetail.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXInvestorDetail/Pods-TRZXInvestorDetail.debug.xcconfig"; sourceTree = "<group>"; };
-		6D561D391E7A32D400E0D507 /* Icon_NavigationBar_Back_Normal_Gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_NavigationBar_Back_Normal_Gray@2x.png"; sourceTree = "<group>"; };
+		6D561D391E7A32D400E0D507 /* Icon_ProjectDetail_Back_Normal_Gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_ProjectDetail_Back_Normal_Gray@2x.png"; sourceTree = "<group>"; };
 		6DB85CAA1E6EC3BB00AD7C0A /* TRZXInvestorDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXInvestorDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB85CAE1E6EC3BB00AD7C0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DB85CB01E6EC3BB00AD7C0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -300,7 +300,7 @@
 		6DD92B7B1E6FD73100B61C6A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6D561D391E7A32D400E0D507 /* Icon_NavigationBar_Back_Normal_Gray@2x.png */,
+				6D561D391E7A32D400E0D507 /* Icon_ProjectDetail_Back_Normal_Gray@2x.png */,
 				6DD875D91E76A7DD0062C84B /* Icon_ProjectDetail_ProjectHistory_RedDot@2x.png */,
 				6DD6442C1E728D1100345D68 /* Icon_PlaceholderImage.png */,
 			);
@@ -448,7 +448,7 @@
 				6DD875DF1E778FF30062C84B /* TRZXInvestorDetailCasesTableViewCell.xib in Resources */,
 				6DD875C41E7674390062C84B /* TRZXInvestorDetailTextSectionHeader.xib in Resources */,
 				6DD875D31E769F810062C84B /* TRZXInvestorDetailOnlyTextTableViewCell.xib in Resources */,
-				6D561D3A1E7A32D400E0D507 /* Icon_NavigationBar_Back_Normal_Gray@2x.png in Resources */,
+				6D561D3A1E7A32D400E0D507 /* Icon_ProjectDetail_Back_Normal_Gray@2x.png in Resources */,
 				6DD875C91E767BA40062C84B /* TRZXInvestorDetailLeftRightTextTableViewCell.xib in Resources */,
 				6DD875CE1E768B260062C84B /* TRZXInvestorBaseInfoTableViewCell.xib in Resources */,
 				6DB85CB81E6EC3BB00AD7C0A /* Main.storyboard in Resources */,
