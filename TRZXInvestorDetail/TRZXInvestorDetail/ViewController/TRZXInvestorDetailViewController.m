@@ -93,7 +93,7 @@ UITableViewDataSource
         @strongify(self);
         switch (action) {
             case ENavigationBarAction_Back:
-                [self.navigationController popViewControllerAnimated:YES];
+                [self.navigationController popViewControllerAnimated:NO];
                 break;
                 
             default:

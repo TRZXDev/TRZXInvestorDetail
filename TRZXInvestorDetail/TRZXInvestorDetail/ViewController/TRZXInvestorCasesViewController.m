@@ -94,13 +94,13 @@ UITableViewDataSource
 - (UIButton *)backButton
 {
     if (!_backButton) {
-        _backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 25)];
+        _backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 45, 20)];
         [_backButton setImage:[UIImage imageNamed:@"Icon_ProjectDetail_Back_Normal_Gray"] forState:UIControlStateNormal];
         [_backButton setTitleColor:[UIColor grayColor]  forState:UIControlStateNormal];
         [_backButton setTitle:@"返回" forState:UIControlStateNormal];
         _backButton.titleLabel.font = [UIFont systemFontOfSize:16];
-        _backButton.imageEdgeInsets = UIEdgeInsetsMake(0,0,0,3);
-        _backButton.titleEdgeInsets = UIEdgeInsetsMake(2,0,0,0);
+        _backButton.imageEdgeInsets = UIEdgeInsetsMake(2,0,0,3);
+        _backButton.titleEdgeInsets = UIEdgeInsetsMake(3,0,0,0);
         [_backButton addTarget:self action:@selector(composeButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _backButton;
