@@ -18,5 +18,6 @@ target 'TRZXInvestorDetail' do
   pod 'TRZXKit'
   pod 'TRZXNetwork'
   pod 'TRZXNavigationTableViewHeaderView'
+  pod ‘TRZXShare’
  
 end

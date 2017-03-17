@@ -30,6 +30,9 @@
 /// vc
 #import "TRZXInvestorCasesViewController.h"
 
+/// 组件
+#import <TRZXShare/TRZXShareManager.h>
+
 @interface TRZXInvestorDetailViewController ()
 <
 UITableViewDelegate,
@@ -95,6 +98,26 @@ UITableViewDataSource
             case ENavigationBarAction_Back:
                 [self.navigationController popViewControllerAnimated:NO];
                 break;
+            case ENavigationBarAction_Share:
+            {
+                NSString *title= @"投融在线-带您走进资本市场";
+                NSString *desc= @"股权融资全过程服务第三方平台，提高融资能力，获取融资渠道！";
+                NSString * link= @"https://www.baidu.com/";
+                
+                
+                OSMessage *msg=[[OSMessage alloc]init];
+                msg.title= title;
+                msg.desc= desc;
+                msg.link= link;
+                msg.image= [UIImage imageNamed:@"icon"];//缩略图
+                
+                
+                [[TRZXShareManager sharedManager]showTRZXShareViewMessage:msg handler:^(TRZXShareType type) {
+                    
+                    NSLog(@">>>>>>>>投融好友");
+                    
+                }];
+            }
                 
             default:
                 break;
